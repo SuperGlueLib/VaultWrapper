@@ -32,6 +32,6 @@ fun exampleUsage2(player: Player, amount: Int) {
     Economy.getBalance(player)
     Economy.canAfford(player, amount)
     Economy.withdraw(player, amount)
-    Economy.despoit(player, amount)
+    Economy.deposit(player, amount)
 }
 ```
