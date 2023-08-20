@@ -3,7 +3,7 @@ plugins {
     `maven-publish`
 }
 
-group = "me.superpenguin.superglue"
+group = "com.github.supergluelib"
 version = "1.0.0"
 
 repositories {
@@ -19,14 +19,15 @@ dependencies {
     }
 }
 
+// This makes it so Jitpack excludes the transitive bukkit dependency from Vault -- I don't know why.
 tasks.withType<GenerateModuleMetadata> {
     enabled = false
 }
 
 publishing.publications.create<MavenPublication>("maven") {
-    groupId = "me.superpenguin.superglue"
-    artifactId = "superfoundations"
-    version = "1.0.0"
+    groupId = group as String
+    artifactId = "VaultWrapper"
+    version = this.version
 
     from(components["java"])
 }
