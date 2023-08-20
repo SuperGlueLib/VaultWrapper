@@ -1,4 +1,4 @@
-package com.github.superglue.vaultwrapper
+package com.github.supergluelib.vaultwrapper
 
 import org.bukkit.Bukkit
 import org.bukkit.Bukkit.getServer

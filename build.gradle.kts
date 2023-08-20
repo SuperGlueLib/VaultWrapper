@@ -19,6 +19,10 @@ dependencies {
     }
 }
 
+tasks.withType<GenerateModuleMetadata> {
+    enabled = false
+}
+
 publishing.publications.create<MavenPublication>("maven") {
     groupId = "me.superpenguin.superglue"
     artifactId = "superfoundations"
