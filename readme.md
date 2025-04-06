@@ -1,5 +1,13 @@
 # VaultWrapper
 
+# This Librarys functionality has migrated to [SuperGlue](https://github.com/SuperGlueLib/SuperGlue/blob/master/src/main/kotlin/com/github/supergluelib/hooks/Economy.kt)
+
+
+
+
+
+
+
 VaultWrapper is a kotlin wrapper for the Vault plugin allowing for easy
 use of the VaultAPI in kotlin, simply shade this library into your plugin
 and start using the Economy object in your code, no setup required!
